@@ -8,6 +8,7 @@ export default function App() {
     <SafeAreaView style={{flex: 2, justifyContent: "center", paddingHorizontal: 20, backgroundColor: "#db1c12"}}>
     
     <View style={styles.container}>
+    <Text style={styles.titulo}>Log In - Wilder</Text>
       <ImageBackground source={require('./assets/CocaCola.png')} resizeMode="contain" style={styles.image} />
       <TextInput style={styles.input} type="email" placeholder='Ingrese su correo'/>
       <TextInput style={styles.input} type="hidden" placeholder='Ingrese su contraseña'/>
@@ -61,6 +62,16 @@ const styles = StyleSheet.create({
     margin: 15,
     backgroundColor: "#ffffff",
     textalign:'center'
+  },
+
+  titulo:{
+    margin: 10,
+    fontFamily: "sans-serif",
+    fontStyle: "bold", 
+    fontSize: 36,
+    alignItems: 'center',
+    color: "#db1c12"
+
   }
 
 });
